@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POTNURU PRANEETH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --light-color: #ecf0f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        .header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 3px solid var(--light-color);
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--secondary-color);
+        }
+
+        /* Skills */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Projects */
+        .project-card {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+
+        /* Contact */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* Mobile Friendly */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .section {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="profile.png" alt="Potnuru Praneeth" class="profile-img">
+            <h1>POTNURU PRANEETH</h1>
+            <p>DATA ANALYTICS | PYTHON DEVELOPER | CLOUD COMPUTING </p>
+        </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+        <div class="container">
+            <h2>Professional Summary</h2>
+            <p>Recent graduate in Computer Science with strong foundations in data analysis and Python programming. 
+Proven ability to transform raw data into actionable insights through 4+ academic projects, including ['sale trend prediction model with 87% accuracy']. Certified in [ 'AWS CLOUD COMPUTING'].
+ Skilled in bridging technical solutions with business needs, demonstrated through collaborative projects like [EXPORT AND IMPORT OF PRODUCTS].
+ Passionate about leveraging Pandas, NumPy, and machine learning libraries to solve real-world problems while continuously expanding technical expertise</p>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <p>Python,C,SQL</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Database Management</h3>
+                    <p>MySQL,PostgreSQL</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Analysis & Visualization</h3>
+                    <p>Pandas, NumPy, Matplotlib</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Machine Learning</h4>
+                    <p>Scikit-learn,Predictive Modeling</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ========== NEW INTERNSHIP SECTION ========== -->
+    <section class="section">
+        <div class="container">
+            <h2>Internships</h2>
+            <div class="project-card">
+                <h3>Cloud computing </h3>
+                <p><strong>Amazon web services(AWS)</strong> | <em>May 2023 - July 2023</em></p>
+                <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                    <li>Processed and analyzed large datasets using AWS services (S3, Redshift, Glue)</li>
+                    <li>Built data pipelines for real-time analytics, improving data processing speed by 25%</li>
+                    <li>Designed interactive dashboards in AWS QuickSight for business stakeholders</li>
+                </ul>
+            </div>
+ <div class="project-card">
+                <h3>Data Integration </h3>
+                <p><strong>Diagonal</strong> | <em>November 2024 - January 2025</em></p>
+                <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                    <li>Configured Qlik Replicate for seamless cloud/on-premises data integration</li>
+                    <li>Optimized live data transfer performance, reducing latency by 15%.</li>
+                    <li>Utilized Talend Open Studio for ETL workflows, improving data integration efficiency by 20%</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Academic Projects -->
+    <section class="section">
+        <div class="container">
+            <h2>Academic Projects</h2>
+            <div class="project-card">
+                <h3>IoT-Based Ultrasonic People Counter with Machine Learning for Occupancy & Peak Time Analysis</h3>
+                <p>Developed a Python script to automate data collection and upload sensor data with Arduino uno to Excel for trend analysis, reducing manual effort by 40%</p>
+                <p>Applied machine learning algorithms  to analyze historical data and predict peak foot traffic hours, achieving 92% accuracy in occupancy predictions.</p>
+                <p>Visualized trends in Excel/Power BI to identify high-traffic periods, optimizing staff scheduling and space utilization by 30%.</p>
+                <p><strong>Tech Stack:</strong> Python(Numpy,Pandas,Matplotlib),c,Excel,Scikit-learn,Power Bi</p>
+            </div>
+             <div class="project-card">
+                <h3>Web Scraping Automation for E-commerce Data Collection</h3>
+                 <p>Automated product data extraction using BeautifulSoup, Scrapy, and Selenium.</p>
+                 <p>Improved data accuracy by 15% and reduced manual effort by 80%.</p>
+                 <p>Analyzed pricing trends using Pandas, providing actionable insights for marketing strategies</p>
+            </div>
+              <div class="project-card">
+               <h3>Brain Tumor Detection Using Machine Learning</h3>
+              <p>Developed a CNN-based model achieving 94% accuracy in tumor detection</p>
+               <p>Optimized preprocessing techniques, surpassing existing methods by 8%</p>
+               <p>Contributed to early diagnosis and improved patient outcomes.</p>
+             </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/praneeth-potnuru-b3808624a" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="potnurupraneeth48@gmail.com">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
